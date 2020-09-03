@@ -101,6 +101,7 @@ float:left;padding:30px;
 	font-size: 15px;
 	font-weight: normal;
 	transition:all 0.6s ease;
+	margin:20px;
 	
 }
 .sign-up-btn button:hover{
@@ -121,7 +122,7 @@ float:left;padding:30px;
 	float:left;
 	width:50%;	
 	height:auto;
-	margin:50px;	
+		
 	padding:50px;
 	
 }
@@ -153,6 +154,19 @@ float:left;padding:30px;
   width:100%;	
   }
   .Futures-tools-content-area{display:inline-grid;}
+.all-features-offer-area {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+}
+.analysis-img-area{
+		
+	width:100%;}
+	.analysis-img-area, .analysis-text-area{
+		width:100%;
+	}
+
 
 }
 
@@ -221,6 +235,7 @@ float:left;padding:30px;
 	display:flex;
 	justify-content: center;
     align-items: center;
+	margin-bottom: 30px;
 }
 .rows{
 	width:365px;
@@ -249,20 +264,20 @@ float:left;padding:30px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	margin:10px;
+	padding:20px;
 }
 
 
 
 .Futeares-tools-text-area{
 	padding-left:10px;
-	width:500px;
+	width:100%;
 	float:left;
 	margin-top:140px;
 }
 
 .fetures-tools-img-arae{
-	width:500px;
+	width:100%;
 	float:left;
 	margin-top:100px
 	
@@ -273,11 +288,16 @@ float:left;padding:30px;
 	
 }
 
-.Features-container-area {
+.all-features-offer-area {
     width: 100%;
-    height: 735px;
+    height: auto;	
 	margin-top:120px;
-    background: white;
+	background: white;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
 }
 .Feature-area-content1{
 	width:100%;
@@ -289,6 +309,7 @@ float:left;padding:30px;
 	border-radius: 50px;
 	outline: none;
 	border: none;
+	cursor:pointer;
 	background:#22195B;
 	color:white;
 	text-align: center;
@@ -305,10 +326,12 @@ float:left;padding:30px;
 
 .Features-offer-wrapper{
 	width:100%;
-	height:880px;
-	background:#FFFFFF;
+	height:auto;
+	
+ background:#FFFFFF; 
 }
 .Featrures-offer{
+	padding-top:20px;
 	width:600px;
 	margin:0 auto;
 	text-align:center;
@@ -318,18 +341,19 @@ float:left;padding:30px;
 	width:100%;
 }
 .Features-offer-text-areas{
-	width:550px;
+	width:50%;
 	float:left;
 }
 .Features-offer-img-areas{
-	width:550px;
+	width:50%;
 	float:left;
 }
 .Features-offer-img-areas img{
-	width:580px;
-	float:left;
+	width:100%;
+	
 }
 .tools{
+	margin: 20px;
 	width:250px;
 	float:left;
 	text-align:center;
@@ -337,6 +361,8 @@ float:left;padding:30px;
 	background:#FAF9FF;
 	transition:1s;
 }
+
+
 .tools:hover{
 	background:#FFFFFF;
 	box-shadow:6px 10px 6px #7a9a9a;
@@ -356,31 +382,49 @@ i.fas.fa-cogs {
 }
 .Analysic-areas{
 	width:100%;
-	background:#FFFFFF;
+	/* background:#FFFFFF; */
+	background:red;
+	height: auto;
+    display: flex;
 }
-.Analysic-areas {
+}
+.Analysic-areas, .Analysic-ares-wrapper {
     width: 100%;
-    height: 580px;
-    background: #cfe4e4;
-}
-.analysis-img-area img{
-	float:left;
-	margin-top:100px
-}
+    height: auto;
+   background: #cfe4e4; 
+	
+	display:inline-grid;
+
+	}
+	.analysis-img-area{
+		float:left;
+		width:50%;
+		padding:20px;
+		margin:0 auto;
+		justify-content:center;
+		align-items:center;
+		display:flex;
+					
+	}
+
 .analysis-img-area img{
 	width:500px;
-	float:left;
-	margin-bottom:50px;
+	height:auto;
+	margin:0 auto;
+	justify-content:center;
+	align-items:center;
+	display:flex;
 }
+
 .analysis-text-area{
-	width:500px;
-	float:left;
-	margin-top:140px;
-	margin-left:50px;
-	margin-bottom:50px;
+	float:right;
+	width:50%;
+	padding:20px;
+	
 }
 .analysis-text-area button{
 	padding: 15px 40px;
+	cursor:pointer;
 	border-radius: 50px;
 	outline: none;
 	border: none;
@@ -398,12 +442,25 @@ i.fas.fa-cogs {
 	border:1px solid #22195B;
 }
 .hosting-row{
-	width:1000px;
+	width:100%;
 	margin:0 auto;
+	justify-content:center;
+	align-items:center;
+	display:flex;
 }
 .hosting-plan{
 	width:100%;
 }
+@media screen and (max-width: 800px) {
+
+	
+	.analysis-img-area, .analysis-text-area{
+		width:100%;
+	}
+
+
+}
+
 .hosting-container-content{
 	width:600px;
 	margin:0 auto;
@@ -477,13 +534,14 @@ i.fas.fa-cogs {
 	margin-bottom:50px;
 }
 .Clent-address-area{
-	width:1000px;
+	width:80%;
 	text-align:center;
 	margin:0 auto;
 }
 .Clent-address-text-area{
 	width:100%;
-	height:240px;
+	height:auto;
+	padding-bottom:10px;
 	background:#FFFFFF;
 	padding-top:40px;
 }
@@ -513,10 +571,20 @@ i.fas.fa-cogs {
 	width:100%;
 	padding-top:100px;
 	padding-bottom:100px;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0 auto;
+	overflow:scroll;
+	
+	
 }
 .Brands-name-wrapper img{
+	float:left;
 	width:150px;
 	margin-left:93px;
+	padding:
 	opacity:0.3;
 	transition:0.5s;
 }
@@ -529,13 +597,17 @@ i.fas.fa-cogs {
 }
 .footer{
 	width:100%;
-	height:500px;
+	height:auto;
 	background:#0E1424;
 	padding-top:100px;
+	display:flex;
+	padding:50px;
 }
 .footer-content{
-	width:1140px;
-	height:260px;
+	width:100%;;
+	height:auto;
+	padding-bottom:200px;
+	display:flex;
 }
 .footer-content-box{
 	width:180px;
